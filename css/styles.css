@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:  #184481;
+    animation-name: colorFlip;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    font-family: "Abhaya Libre", serif;
+    color: white;
+}
+
+@keyframes colorFlip {
+    0%   {background-color: #184481;}
+    50%  {background-color: #0e2050;}
+    100% {background-color: #184481;}
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        display: none;
+    }
+    body {
+        background-color: lightblue;
+    }
+}
+
+header {
+    max-height: 5em;
+    background-color: #0e2050;
+    padding: 0.5em 3em;
+    color: white;
+}
+
+header #logo {
+    margin: 0em 1em;
+    height: 4em;
+    display: inline-block;
+}
+header ul {
+    position: absolute;
+    right: 1em;
+    top: 0em;
+    list-style: none;
+}
+header ul li {
+    text-align: center;
+    display: inline-block;
+    min-width: 15vw;
+}
+header ul li a {
+    padding: 1em 0.5em;
+    font-size: 2em;
+    font-family: "Abhaya Libre", serif;
+    color: white;
+    text-decoration: none;
+
+}
+header ul li a:hover {
+    color: #0e2050;
+    background-color: white;
+    transition-duration: 2s;
+}
+
+article {
+    background-color: #0e2050;
+    width: 70vw;
+    margin: 20px auto;
+    min-height: 20vw;
+    padding: 1em 3em;
+    text-align: justify;
+
+}
+article h1 {
+    text-align: left;
+}
+article img {
+    width: 70vw;
+    margin: 20px 0;
+}
+
+article img:hover{
+    transform: scale(1.2,1.2);
+}
+
+article .img {
+    max-height: 40vw;
+    object-fit: cover;
+}
+
+article a {
+    color: white;
+}
+article .author {
+    text-align: right;
+    color: #184481;
+    text-decoration: none;
+}
+
+footer {
+    max-height: 5em;
+    width: 100vw;
+    background-color: #0e2050;
+    padding: 0.5em 3em;
+    color: white;
+    position: relative;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
